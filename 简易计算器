@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include "FuncTion.h"
+int ComPute(int,char,int);
+int main(){
+    int num,x,y;
+    char z;
+     while(scanf("%d%c%d",&x,&z,&y) !=0){
+        printf("%d",ComPute(x,z,y));
+    }
+    return 0;
+}
+int ComPute(int x,char z,int y){
+    int num;
+    switch(z){
+        case '+':
+            num=x+y;
+            break;
+        case '-':
+            num=x-y;
+            break;
+        case '*':
+            num=x*y;
+            break;
+        case '/':
+            num=x/y;
+            break;
+    }
+    return num;
+}
